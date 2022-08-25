@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./signin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./navbar.css" />
+</head>
+<body>
+    <!-- navbar start -->
+    <div id="header">
+        <h5>FLASH SALE:SERUMS & MASKS AT FLAT 499</h5>
+      </div>
+      <div id="navbar">
+        <div>
+        <a href="" class="menubtn">
+         <img class="menuIcon" src="https://static.vecteezy.com/system/resources/previews/002/292/406/original/hamburger-menu-line-icon-free-vector.jpg" alt="menu">
+        </a>
+      </div>
+      <div>
+        <a href="#" class="logobtn">
+        <img class="logoIcon"
+          src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x.jpg?v=1646547348"
+          alt="logo"/>
+        </a>
+      </div id="spart">
+        <div class="searchBox">
+          <input type="text" class="searchText" placeholder="Search">
+          <a href="#" class="searchbtn">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+        <div id="tpart">
+        <img class="trackingIcon" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Group_346.svg?v=1655211633" alt="">
+        <a href="#" class="cartbtn">
+          <img class="cartIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIq4p9AB9tQu9d0zKl1UMhuWZbv7Q1wZxBfA&usqp=CAU" alt="">
+        </a>
+        <a href="" class="loginbtn">
+          <img class="loginIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE7pFKhkdDUw2y5itWf4EJZAZPMaWzO3Owpw&usqp=CAU" alt="login">
+        </a>
+      </div>
+      </div>
+    <!-- navbar end -->
+    <!-- Sign In start -->
+    <div id="signIn">
+        <h1>Create Account</h1>
+        <div id="fbs">
+          <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Facebook_Logo.png" alt="fb">
+          </div>
+          <div>
+            <a href="https://www.facebook.com/"><button id="fbs-btn">Facebook Signup</button></a>
+          </div>
+        </div>
+        <div id="gs">
+            <img src="https://cdn.imgbin.com/3/5/19/imgbin-google-google-account-google-logo-login-mining-in-canada-VTmG131d49E1TfpXjN8vVjBfx.jpg" alt="google">
+            <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?state=13453-b9efcb91ac7d403e8b8366f447a4b0fc&redirect_uri=https%3A%2F%2Foneclicksociallogin.devcloudsoftware.com%2Fuser%2Fgoogleloginnotifier%2F&client_id=1003899641045-oa1oblo54ae2lh2qb2in254k1dgghs1g.apps.googleusercontent.com&response_type=code&include_granted_scopes=true&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&prompt=select_account&access_type=online&flowName=GeneralOAuthFlow"><button id="gs-btn" >Google Signup</button></a>
+        </div>
+        <div>
+            <h3>FIRST NAME</h3>
+            <input type="text" id="first">
+            <h3>LAST NAME</h3>
+            <input type="text" id="last">
+            <h3>EMAIL</h3>
+            <input type="email" id="email" >
+            <h3>PASSWORD</h3>
+            <input type="password" id="password" >
+        </div>
+        <button class="create-btn">Create</button>
+        <h2>Already have account! <a href="./login.html">Log In</a></h2>
+    </div>
+    <!-- Sign End -->
+</body>
+</html>
+<script src="./signin.js"></script>
