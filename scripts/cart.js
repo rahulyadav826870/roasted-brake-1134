@@ -43,22 +43,22 @@ update.addEventListener("click", () => {
 });
 
 
-let checkoutMessage=(message, type)=>{
-     var emptyMessage = document.getElementById("message");
-     emptyMessage.innerHTML = message;
-     if(type)
-     {
-         emptyMessage.style.color="#3C763D";
-         emptyMessage.style.backgroundColor = "#DFF0D8"; 
-         emptyMessage.style.border = "2px solid #3C763D";
-     }
-     else
-     {
-         emptyMessage.style.color="black";
-         emptyMessage.style.backgroundColor = "#F2DEDE"; 
-         emptyMessage.style.border = "2px solid black";
-     }
-     emptyMessage.classList.toggle("show");
+// let checkoutMessage=(message, type)=>{
+//      var emptyMessage = document.getElementById("message");
+//      emptyMessage.innerHTML = message;
+//      if(type)
+//      {
+//          emptyMessage.style.color="#3C763D";
+//          emptyMessage.style.backgroundColor = "#DFF0D8"; 
+//          emptyMessage.style.border = "2px solid #3C763D";
+//      }
+//      else
+//      {
+//          emptyMessage.style.color="black";
+//          emptyMessage.style.backgroundColor = "#F2DEDE"; 
+//          emptyMessage.style.border = "2px solid black";
+//      }
+//      emptyMessage.classList.toggle("show");
   
      
-   }
+//    }
