@@ -1571,11 +1571,12 @@ let appendData=(data)=>{
   let container = document.getElementById("container")
   data.forEach((el)=>{
     let div = document.createElement("div");
-    div.onclick=()=>{
-      localStorage.setItem("product",JSON.stringify(el))
-    }
     let img = document.createElement("img");
-    img.src=el.images[0]
+    img.src=el.images[0];
+    img.onclick=()=>{
+      localStorage.setItem("product",JSON.stringify(el));
+      window.location="product.html"
+    }
     let title = document.createElement("h3");
     title.innerText=el.title;
     let price = document.createElement("p");
@@ -1591,3 +1592,11 @@ let appendData=(data)=>{
 }
 
 appendData(data);
+
+
+let cart = JSON.parse(localStorage.getItem("cart"))||[]
+let addTocart=(data)=>{
+  console.log(cart)
+  cart.push(data);
+  localStorage.setItem("cart",JSON.stringify(cart))
+}
