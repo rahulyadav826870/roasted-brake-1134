@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+         *{
+        margin: 0px;
+        padding: 0px;
+        }
+        
+        .main-car{
+            width: 100%;
+            /* margin-top: 50px; */
+            background-color: #eaf7c3;
+            border: 10px solid transparent;
+        }
+        .cell{
+            width: 15%;
+            height: 300px;
+            margin: 0 15px;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid red;
+            text-align: center;
+            background-color: #c2d87a;
+            
+        }
+        .cell h3{
+
+            margin-top: 20px;
+        }
+        .cell p{
+
+margin-top: 20px;
+}
+.fff{
+    text-align: center;
+    background-color:#eaf7c3;
+    margin-top: 30px;
+    height: 100px;
+}
+       
+
+        #upper{
+            width: 100%;
+            /* height: auto;
+            box-sizing: border-box; */
+            position: relative;
+        }
+        #upper>img{
+            width: 100%;
+
+        }
+        #upper>button{
+            position:absolute ;
+            margin-top: 200px;
+            background-color: transparent;
+            border: none;
+        }
+        #upper>button:nth-child(2){
+            left: 10px;
+           
+        }
+        #upper>button:nth-child(3){
+            right: 10px;
+        }
+        .container{
+            width: 100%;
+            height: 600px;
+            border: 1px solid red;
+            display: flex;
+            gap: 20px;
+            background-color:#d1e3e3;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        .main{
+            width: 25%;
+            height: 300px;
+            /* border: 1px solid green; */
+            text-align: center;
+            margin-top: 30px;
+            /* margin-bottom: 30px; */
+            margin: auto;
+            border-radius: 20px ;
+             /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+        }
+        .main img{
+            width: 100%;
+            /* overflow: hidden; */
+            height: 400px;
+            
+
+        }
+        .main p{
+            background-color: white;
+            /* border: 1px solid transparent; */
+            border-radius: 0px 0px 10px 20px;
+            font-size: 20px;
+        }
+        .aaa{
+            text-align: center;
+            width: 80%;
+            /* margin-top: 200px; */
+            margin: auto;
+            margin-top: 200px;
+
+        }
+        .aaa p{
+            margin-top: 20px;
+            font-size: 15px;
+            color: gray;
+
+        }
+        .dd{
+            width: 100%;
+            /* border: 1px solid red; */
+            height: auto;
+            margin-top: 40px;
+        }
+        .oo{
+            width:25%;
+            /* border: 1px solid red; */
+
+            margin: auto;
+            text-align: center;
+        }
+        .oo img{
+            width: 100%;
+        }
+        .oo p{
+            color: gray;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+        .oo h4{
+            background-color: rgb(87, 86, 86);
+            color: white;
+        }
+        .pp{
+
+            width: 50%;
+            border: 1px solid red;
+           height: auto;
+           display: grid;
+           grid-template-columns: repeat(2,1fr);
+           justify-content: center;
+           align-items: center;
+margin: auto;
+
+        }
+        .ii{
+            width:25%;
+            /* border: 1px solid red; */
+
+            margin: auto;
+            text-align: center;
+        }
+        .ii img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="upper">
+            <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1c_4.png?v=1655968952" />
+            <!-- <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1b_2.png?v=1646731308"/> -->
+            <button><</button>
+            <button>></button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_23.png?v=1660809964" alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Untitled-2_1_dd2b4fbc-12e8-4b8d-9675-2df8fc72dbd9.png?v=1642769314" />
+        </div>
+        <div class="container">
+            <div class="main">
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/girl_1.png?v=1643013901" alt="">
+                <p>CONTROL HAIRFALL</p>
+            </div>
+            <div  class="main">
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/girl_3.png?v=1643013978" alt="">
+                <p>SCALP CARE</p>
+            </div>
+            <div  class="main">
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/girl_2_5f178ee9-cbb6-4d93-81fe-248206564305.png?v=1643014000" alt="">
+                <p>REPAIR DAMAGE</p>
+            </div>
+        </div>
+        <!-- screen shot image append here -->
+       <div class="fff">
+            <h4>THE SCIENCE BEHIND</h4>
+            <h2><i>Our Formulations</i></h2>
+            <p>Our Formulations are 90% nature derived, with our focus being the use of scientifically-proven ingredients that ensure <br> promised results.</p>
+        </div>
+        
+        <div class="main-car">
+            
+            <div class="cell">
+                <h3><i>Apple Cider Vinegar</i></h3>
+                <p> to Balance pH</p>
+                <p>ACV is a natural AHA, anti-fungal & antibacterial ingredient that soothes your
+                    
+                    scalp, decreases dandruff and yeast growth
+                    
+                    while keeping your scalp pH level balanced.
+                    
+                    It is also a natural conditioner that
+                    
+                    smoothens hair, controls frizz & adds shine.</p>
+            </div>
+            <div class="cell">
+                <h3><i>Moringa seed oil</i></h3>
+                <p>to Strengthen</p>
+                <p>Moringa Seed Oil is rich in zinc that boosts natural keratin production in hair to strengthen limp, lifeless hair. It also activates dormant hair follicles to enhance hair growth. Moringa-infused haircare is also rich in omega-3 fatty acid which over-coots the hair cortex to lock in moisture. Behenic Acid in Moringa Seed Oil makes the hair lustrous & soft.</p>
+            </div>
+            <div class="cell">
+                <h3><i>Pea peptide Protein</i></h3>
+                <p>to Resist Hair Loss
+                </p>
+                <p>A rich source of amino acid,
+                    pea-peptide protein stimulates & 
+                    strengthens hair follicle cells to resist hair loss.
+                     The reconstructive properties of pea peptide forms a film 
+                     over hair slowing down moisture loss from the hair, keeping it hydrated,
+                      healthy & less prone to breakage. In addition, pea peptides also acts as a 
+                      superfood for the scalp nourishing it for supersoft, silky smooth hair
+                    </p>
+            </div>
+            <div class="cell">
+                <h3><i>Argan Oil </i></h3>
+                <p>to Fight Breakage</p>
+                <p>A known hydrator & a natural source of
+
+                    Vitamin E, it strengthens weak & damaged
+                    
+                    hair. It increases the hair elasticity to prevent
+                    
+                    rough breakage while restoring volume to
+                    
+                    dull lifeless hair. It also contains fatty acids
+                    
+                    that naturally moisturize & lubricate the hair
+                    
+                    giving it a healthy lustre and shine.</p>
+            </div>
+            <div class="cell">
+                <h3><i>Linoleic Acid</i></h3>
+                <p>to Balance Hair Growth</p>
+                <p>Linoleic Acid keeps the scalp hydrated &
+
+                    healthy. It rebalances the hair growth cycle
+                    
+                    which in turn gives you strong and thick hair,
+                    
+                    hence reducing hair fall and loss.</p>
+            </div>
+            <div class="cell">
+                <h3><i>Hyaluronic Acid </i></h3>
+                <p>for Hydration</p>
+                <p>While Hyaluronic is a known skin hero, it is also extremely beneficial for dry and frizzy hair, Healthy hair strands need moisture to maintain their structure and resist the effects of environmental factors. Hyaluronic Acid is a natural humectant that locks water molecules inside the hair strands to improve its appearance and overall hair health, while resisting damage.</p>
+            </div>
+        </div>
+
+        <div class="aaa">
+            <h1><i>Shop Hair Care</i></h1>
+            <p>Formulated with a high percentage of active botanicals, with minimal synthetic chemicals. Our formulations are 90% nature derived, with our focus being the use of scientifically - proven ingredients that ensure promised results.</p>
+
+        </div>
+        <div class="dd">
+            <div class="oo">
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/moringashampoo_6fc70634-479a-4d4f-82dd-bb6de9fbeb89.png?v=1658907892" alt="">
+            
+                <p>Argan Oil Anti Hairfall Shampoo With Moringa & Keratin | Helps Reduce Hair Fall & Breakage | For Silky, Smooth Hair| Dry & Frizzy Hair | 100% Sulphate Free
+                   <br> Rs: 695.00 Rs: 590.00</p>
+                    <h4>ADD TO CART</h4>
+            </div>
+        </div>
+        <div class="pp">
+            <div class="ii">
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-5_4_d34e6033-1d52-4a86-85c5-6419c4d1fdb1.jpg?v=1655310462" alt="">
+                <p>Pea Peptide + Cysteine Hair Volumising Serum
+                    Rs: 745.00 Rs: 633.00</p>
+                <h4>ADD TO CART</h4>
+            </div>
+            <div class="ii">
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_1.jpg?v=1655310429" alt="">
+                <p>AHA Exfoliation Apple Cider Hair & Scalp Scrub
+                    Rs: 695.00 Rs: 590.00</p>
+                <h4>ADD TO CART</h4>
+            </div>
+            <div class="ii">
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/DAMAGESHAMPOO_b8a28fa5-387a-4952-b2e4-43d208bb34d5.png?v=1658907324" alt="">
+                <p>Quinoa Protein & Olive Damage Repair Shampoo
+                    Rs: 695.00 Rs: 590.00</p>
+                <h4>ADD TO CART</h4>
+            </div>
+            <div class="ii">
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-2_1.png?v=1658907316" alt="">
+                <p>Quinoa & Olive Oil Hair Mask With Vegan Keratin & Hyaluronic | For Dry, Damaged Hair with Split Ends I For Soft & Smooth Hair, Increases Hair Strength | 100% Sulphate Free
+                    Rs: 645.00 Rs: 548.00</p>
+                <h4>ADD TO CART</h4>
+            </div>
+            <div class="ii">
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_1_7e78739e-57e0-4fc0-bffe-f68bd86ab876.jpg?v=1655310503" alt="">
+                <p>Hyaluronic + Ceramide Hair Treatment Serum</p>
+                <h4>ADD TO CART</h4>
+            </div>
+            <div class="ii">
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/2_7.jpg?v=1643096418" alt="">
+                <p>Ditch the Damage Combo
+                    Rs: 2,085.00 Rs: 1,772.00</p>
+                <h4>ADD TO CART</h4>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/7_31dec0fe-d522-47b7-96c4-da0c99724f9b.png?v=1642768426" alt="">
+    </div>
+</html>
+<script>
+    let img =document.querySelector("img");
+    let buttons = document.querySelectorAll("button");
+
+    let count = 0;
+    let imgArray =[
+        "https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1c_4.png?v=1655968952",
+        "https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1b_2.png?v=1646731308"
+
+    ]
+     buttons[0].addEventListener("click",function(){
+        if(count === 0){
+            count=imgArray.length-1;
+        }
+        else{
+            count--;
+        }
+        img.src=imgArray[count];
+     })
+     buttons[1].addEventListener("click",function(){
+        if(count ===imgArray.length-1 ){
+            count=0;
+        }
+        else{
+            count++;
+        }
+        img.src=imgArray[count];
+     })
+
+
+    
+
+
+</script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>type="text/javascript">
+    $('.main-car').flickity({
+  // options
+  cellAlign: 'left',
+  wrapAround:true,
+  freeScroll: true
+});
+</script>

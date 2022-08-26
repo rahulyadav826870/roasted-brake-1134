@@ -1,0 +1,215 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main-carousel{
+            width: 100%;
+            margin-top: 50px;
+        }
+        .carousel-cell{
+            width: 30%;
+            height: 350px;
+            margin: 0 15px;
+            overflow: hidden;
+            border-radius: 8px;
+            /* border: 1px solid red; */
+        }
+        .carousel-cell img{
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+         .last1{
+           width: 80%;
+           margin: auto;
+        } 
+        .nnn{
+            margin-top: 50px;
+            width: 25%;
+            height: 400px;
+            margin: 0 50px;
+            overflow: hidden;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+           border: 1px solid transparent;
+        }
+        .nnn p {
+            margin-top: 10px;
+            color: gray;
+        }
+        .nnn img{
+            
+            width: 60%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .last{
+            width: 95%;
+            margin: auto;
+        }
+        .mmm{
+            margin-top: 50px;
+            width: 35%;
+            height: auto;
+            margin: 0 10px;
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        .mmm img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .mmm p{
+            color: gray;
+        }
+        .mmm p~p{
+            text-align: left;
+            text-decoration: underline;
+            color: palevioletred;
+        }
+        .hight{
+            margin-top: 50px;
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+        .cell{
+            /* border: 1px solid red; */
+            margin-top: 50px;
+            width: 25%;
+            height: auto;
+            margin: 0 50px;
+            overflow: hidden;
+            border-radius: 8px;
+           
+        }
+        .cell img{
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+        .head{
+            width: 50%;
+            height: auto;
+            /* border: 1px solid red; */
+            text-align: center;
+            margin: auto;
+        }
+        .head p{
+            color: gray;
+        }
+        .slide_show{
+
+width: 100%;
+height: 50px;
+/* border: 1px solid red; */
+text-align: center;
+margin-top: 50px;
+}
+.head2{
+            width: 50%;
+            height: auto;
+            /* border: 1px solid red; */
+            text-align: center;
+            margin: auto;  
+            margin-top: 50px; 
+        }
+        .head2 p{
+            color: gray;
+        }
+        .middle{
+            width: 100%;
+            height: 30%;
+            /* border: 1px solid red; */
+            text-align: center;
+            
+            margin-top: 100px;
+        }
+        .middle>img{
+            width: 100%;
+        }
+        .middle h2{
+            margin-top: 50px;
+        }
+        .middle p{
+            margin-bottom: 50px;
+        }
+        .haed3{
+            width: 50%;
+            height: auto;
+            /* border: 1px solid red; */
+            text-align: center;
+            margin: auto;  
+            margin-top: 50px; 
+        }
+        .para{
+            width: 70%;
+            height: 150px;
+            /* border: 1px solid red; */
+            margin: auto;
+            text-align: center;
+            margin-top: 30px;
+            
+            
+        }
+        .para>p{
+            font-size: 20px;
+          color: gray;  
+        }
+        .para i{
+           font-weight: bold;
+           color: rgb(56, 46, 46);
+        }
+        .img{
+
+width: 70%;
+height: auto;
+/* border: 1px solid red; */
+display: flex;
+text-align: center;
+margin: auto;
+
+}
+.img>div{
+width: 30%;
+height: 200px;
+/* border: 1px solid red; */
+}
+.img img{
+width: 60%;
+}
+.jj{
+            width: 70%;
+            height: 302px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            margin-top: 50px;
+       }
+       .jj div{
+        /* border: 1px solid red; */
+            height: 300px;
+            text-align: center;
+            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+            border-radius: 10px;
+            
+       }
+       .h{
+        text-align: center;
+
+       }
+       .lll{
+        text-align: center;
+        margin-bottom: 30px;
+       }
+       .ooo{
+        margin-top: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+       }
