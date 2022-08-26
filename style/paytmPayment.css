@@ -11,6 +11,8 @@ body{
     overflow-y: scroll;
     border-radius: 5px;
 }
+
+
 #detail input
 {
     padding-left: 10px;

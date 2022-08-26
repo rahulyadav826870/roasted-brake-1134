@@ -5,10 +5,12 @@ body {
      color: #646060;;
      background-color: white;
  }
+
+ /* background CSS */
  
  #backgroundImage > img:nth-child(1){
      height: 34vh;
-     /* box-sizing: content-box; */
+     
      /* background-image: cover; */
      width: 100%;
  }
