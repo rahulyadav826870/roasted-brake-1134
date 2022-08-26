@@ -22,7 +22,7 @@ document.querySelector("#login-btn").addEventListener("click",loginApp);
    if(flag){
   alert("Log In Sucessfully");
   localStorage.setItem("system","online")
-  window.location.href="../index,html"
+  window.location.href="./index,html"
   
    }
    else{
