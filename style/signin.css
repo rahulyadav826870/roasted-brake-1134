@@ -1,0 +1,106 @@
+
+
+/* --------------------------- */
+
+
+#signIn{
+    
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 20px;
+}
+#fbs{
+   display: flex;
+   justify-content: center;
+   background-color: #000dff;
+   width: 60%;
+   margin-left: 20%;
+   margin-top: 5%;
+   
+   
+}
+#gs{
+    display: flex;
+    justify-content: center;
+    background-color: #fe3523;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+ 
+    
+}
+img{
+    margin-left: 10px;
+    gap: none;
+    height: 50px;
+
+    
+}
+#fbs-btn{
+    width: 100%;
+    background-color: #000dff;
+    border: none;
+    margin-top: 15px;
+    margin-right:50px;
+    font-weight:bold;
+    color: wheat;
+    font-size: 20px;
+    
+    
+}
+#gs-btn{
+    width: 100%;
+    background-color: #fe3523;
+    border: none;
+    margin-top: 15px;
+    margin-right:40px;
+    font-weight:bold;
+    color: wheat;
+    font-size: 20px;
+}
+input{
+    width: 40%;
+    height:50px; 
+    border: none;
+    margin-bottom: 10px;
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    text-align: center;
+    font-size: 25px;
+}
+.create-btn{
+    width: 20%;
+    height:50px;
+    margin: 30px;
+    background-color: aqua;
+    border: none;
+    color: rgb(126, 71, 132);
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+h1{
+    width:40%;
+    margin-left: 30%;
+    padding: 20px;
+    color:burlywood;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+h3{
+    color: rgb(3, 130, 88);
+    margin-bottom: 5px;
+ 
+    padding:inherit;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    margin-bottom: 10%;
+    text-decoration:underline;
+}
