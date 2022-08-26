@@ -2,7 +2,20 @@
   document.querySelector(".create-btn").addEventListener("click",myproductApp);
   let customerArr=JSON.parse(localStorage.getItem("customerData"))||[]
   function myproductApp(){
-  event.preventDefault();
+    
+    
+  let first=document.querySelector("#firstname")
+  let b=document.getElementById("last")
+  let c=document.getElementById("email")
+  let d=document.getElementById("password")
+  if(firstname.value==""||b.value==""||c.value==""||d.value==""){
+    alert("enter all the fields")
+    return
+  }
+  if(!c.value.includes("@")){
+    alert("enter valid email")
+    return
+  }
   let customerObj={
      cEmail:document.querySelector("#email").value,
      cPassword:document.querySelector("#password").value,
@@ -18,6 +31,7 @@
    if(flag){
    customerArr.push(customerObj);
    localStorage.setItem("customerData",JSON.stringify(customerArr)); 
+   window.location.href="./login.html"
   
    }
    else{
@@ -25,11 +39,12 @@
 
   
   }
-  document.getElementById("first").value=""
-  document.getElementById("last").value=""
-  document.getElementById("email").value=""
-  document.getElementById("password").value=""
+ 
+  firstname.value="";
+  b.value="";
+  c.value="";
+  d.value="";
    
-//    window.location.href="#";
+ 
   }
       
