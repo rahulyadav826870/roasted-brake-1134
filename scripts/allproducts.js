@@ -1592,6 +1592,48 @@ let appendData=(data)=>{
 }
 
 appendData(data);
+let filter = document.getElementById("filter");
+
+  filter.addEventListener("change",function(){
+    if(filter.value === "position"){
+        appendData(data);
+        window.location.reload(true);
+     }
+    // else if (filter.value === "NewArrival"){
+    //     let filtered = data.filter(function(element){
+    //         return element.nwearrival===1;
+    //     })
+    //     appendData(filtered);
+    else if (filter.value === "LowToHigh"){
+       let priceLH = data.sort(function(a,b){
+            if(a.price > b.price) return 1
+            if(a.price < b.price) return -1
+            return 0
+        })
+       appendData(priceLH);
+    }else if (filter.value === "HighToLow"){
+        let priceHL = data.sort(function(a,b){
+             if(a.price > b.price) return -1
+             if(a.price < b.price) return 1
+             return 0
+         })
+        appendData(priceHL);
+     }else if (filter.value === "sortZtoA"){
+        let nameP = data.sort(function(a,b){
+             if(a.title > b.title) return -1
+             if(a.title < b.title) return 1
+             return 0
+         })
+        appendData(nameP);
+     }else if (filter.value === "sortAtoZ"){
+        let nameP = data.sort(function(a,b){
+             if(a.title > b.title) return 1
+             if(a.title < b.title) return -1
+             return 0
+         })
+        appendData(nameP);
+     }
+  })
 
 
 let cart = JSON.parse(localStorage.getItem("cart"))||[]
