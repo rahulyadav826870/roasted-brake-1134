@@ -1594,11 +1594,12 @@ let appendData=(data)=>{
 appendData(data);
 
 
-let cart = JSON.parse(localStorage.getItem("cart"))||[]
+let products = JSON.parse(localStorage.getItem("products"))||[]
 let addTocart=(data)=>{
-  console.log(cart)
-  cart.push(data);
-  localStorage.setItem("cart",JSON.stringify(cart))
+  alert(`${data.title} is added to cart`)
+  console.log(products)
+  products.push(data);
+  localStorage.setItem("cart",JSON.stringify(products))
 }
 
 
