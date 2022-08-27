@@ -1600,3 +1600,15 @@ let addTocart=(data)=>{
   cart.push(data);
   localStorage.setItem("cart",JSON.stringify(cart))
 }
+
+
+import navbar from "./navbarhtml.js"
+
+let import_navbar = document.getElementById("navbar");
+import_navbar.innerHTML=navbar();
+
+
+//navbar functionality
+
+
+

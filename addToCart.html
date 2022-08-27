@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/cart.css">
     <title>Cart </title>
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/d_and_k_and_logo_1_32x32.png?v=1593074179">
 </head>
 <body>
@@ -15,20 +17,20 @@
 
     <div id="cart-container">
         <h1>Bag</h1>
-        <span id="quntity">QUANTITY</span><span id="total">TOTAL</span>
+        <span id="quntity">PRODUCT</span><span id="total">TOTAL</span>
         <div id="product">
-
+            
         </div>
     </div>
     <hr>
     <div id="subtotalDiv">
-        <div style="display: flex;  font-size: 14px;">
+        <div >
 
             <h1>Subtotal</h1>
-            <h1 id="subtotal"></h1>
+            <h3 id="subtotal" style="color: grey;"></h3>
         </div>
         <div style="margin-bottom: 2000px;">
-            <button class="checkoutbtn" id="checkout">Check Out</button>
+            <a href="checkout.html"><button class="checkoutbtn" id="checkout">Check Out</button></a>
             <button class="checkoutbtn" id="updatecart">Update Cart</button>
         </div>
     </div>
@@ -36,7 +38,9 @@
     <div id="footer">
 
     </div>
-    
+    <!-- <div id="container">
+
+    </div> -->
 </body>
 </html>
-<script src="./scripts/cart.js" ></script>
+<script src="./scripts/cart.js" type="module" ></script>
