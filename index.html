@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div id="header">
+        <h5 id="text">FLASH SALE:SERUMS & MASKS AT FLAT 499</h5>
+      </div>
+      <div id="navbar">
+        <div>
+          <img
+            onclick="loadmenu()"
+            class="menuIcon"
+            id="menuIcon"
+            src="https://static.vecteezy.com/system/resources/previews/002/292/406/original/hamburger-menu-line-icon-free-vector.jpg"
+            alt="menu"
+          />
+        </div>
+        <div>
+          <a href="#" class="logobtn">
+            <img
+              class="logoIcon"
+              src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x.jpg?v=1646547348"
+              alt="logo"
+            />
+          </a>
+        </div>
+
+        <div class="searchBox">
+          <input type="text" class="searchText" placeholder="Search" />
+          <a href="#" class="searchbtn">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+        <div id="tpart">
+          <a href="addToCart.html" class="cartbtn">
+            <img 
+              class="cartIcon" 
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIq4p9AB9tQu9d0zKl1UMhuWZbv7Q1wZxBfA&usqp=CAU"
+              alt=""
+            />
+          </a>
+          <a href="login.html" id="loginbtn">
+            <img
+              id="loginIcon"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE7pFKhkdDUw2y5itWf4EJZAZPMaWzO3Owpw&usqp=CAU"
+              alt="login"
+            />
+          </a>
+        </div>
+      </div>
+      <!-- Menu -->
+      <div id="mainmenu">
+        <div id="menu">
+          <div class="sidebar">
+            <ul>
+              <li>
+                <a href="">WHAT'S NEW</a>
+              </li>
+              <li>
+                <a href="">BEST SELLERS</a>
+              </li>
+              <li>
+                <a href="">499 STORE</a>
+              </li>
+              <li class="in">
+                <a href="" class="in-btn">SHOP BY INGREDIENTS</a>
+                <p onclick="first()" id="first">+</p>
+                <ul id="in-show">
+                  <li>
+                    <a href="">NIACINAMIDE + CICA</a>
+                  </li>
+                  <li>
+                    <a href="">HYALURONIC + RICE WATER</a>
+                  </li>
+                  <li>
+                    <a href="">VITAMIN C</a>
+                  </li>
+                  <li>
+                    <a href="">WATERMELON + AHA</a>
+                  </li>
+                  <li>
+                    <a href="">RETINOL + CERAMIDE</a>
+                  </li>
+                  <li>
+                    <a href="">SALICYLIC</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="in">
+                <a href="" class="co-btn">SHOP BY CONCERN</a>
+                <p onclick="second()" id="second">+</p>
+                <ul id="co-show">
+                  <li>
+                    <a href="">DRYNESS & REPAIR</a>
+                  </li>
+                  <li>
+                    <a href="">ACNE CONTROL</a>
+                  </li>
+                  <li>
+                    <a href="">DULLNESS</a>
+                  </li>
+                  <li>
+                    <a href="">DARK SPOTS & PIGMENTATION</a>
+                  </li>
+                  <li>
+                    <a href="">AGE DEFENCE</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="in">
+                <a href="" class="pr-btn">SHOP ALL PRODUCTS</a>
+                <p onclick="third()" id="third">+</p>
+                <ul id="pr-show">
+                  <li>
+                    <a href="">SERUMS & OIL</a>
+                  </li>
+                  <li>
+                    <a href="">MOISTURIZERS & DAY CREAMS</a>
+                  </li>
+                  <li>
+                    <a href="">MIGHT CREAMS & SLEEP MASKS</a>
+                  </li>
+                  <li>
+                    <a href="">FACE WASH</a>
+                  </li>
+                  <li>
+                    <a href="">MASKS</a>
+                  </li>
+                  <li>
+                    <a href="">FACE TONERS</a>
+                  </li>
+                  <li>
+                    <a href="">SUNSCREEN</a>
+                  </li>
+                  <li>
+                    <a href="">UNDERARM CAREMASKS</a>
+                  </li>
+                  <li>
+                    <a href="">EXFOLIATORS</a>
+                  </li>
+                  <li>
+                    <a href="">LIP CARE</a>
+                  </li>
+                  <li>
+                    <a href="">COMBOS & REGIME</a>
+                  </li>
+                  <li>
+                    <a href="">TOOLS & ACCESSORIES</a>
+                  </li>
+                  <li>
+                    <a href="">GIFTING</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="">HAIR CARE</a>
+              </li>
+              <li>
+                <a href="">BODY CARE</a>
+              </li>
+              <li>
+                <a href="">IKWI NUTRITION</a>
+              </li>
+              <li>
+                <a href="">DOWNLOAD THE APP</a>
+              </li>
+              <li class="in">
+                <a href="" class="be-btn">KNOW US BETTER</a>
+                <p onclick="forth()" id="forth">+</p>
+                <ul id="be-show">
+                  <li>
+                    <a href="">OUR SKINCARE JOURNAL</a>
+                  </li>
+                  <li>
+                    <a href="">OUR SKINCARE GUIDES</a>
+                  </li>
+                  <li>
+                    <a href="">EARTHCARE</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="in">
+                <a href="" class="pr-btn">PROFILE</a>
+                <p onclick="fifth()" id="fifth">+</p>
+                <ul id="pr-show2">
+                  <li>
+                    <a href="">SKINDULGENCE REWARDS</a>
+                  </li>
+                  <li>
+                    <a href="">WISHLIST</a>
+                  </li>
+                  <li>
+                    <a href="">TRACK ORDER</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="">LOG IN</a>
+              </li>
+            </ul>
+          </div>
+          <div id="smenu">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Cica_Sunscreen_Burger_Menu-02_2.png?v=1659613395"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar section end -->
+
+    <!-- 1st part -->
+    <div class="slideshow-container">
+      <div class="Saikat-mySlides_fade">
+        <div class="numbertext">1 / 5</div>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1_desk_7f3df301-1d23-4327-800b-8b63bccfd0a6_1.jpg?v=1658910526"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="Saikat-mySlides_fade">
+        <div class="numbertext">2 / 5</div>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Desktop_4_3babe833-d39a-41e1-820b-094106abf857.png?v=1658910529"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="Saikat-mySlides_fade">
+        <div class="numbertext">3 / 5</div>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/vit_c_desk_2.png?v=1660133127"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="Saikat-mySlides_fade">
+        <div class="numbertext">4 / 5</div>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1-Product_banner_Desktop_5.jpg?v=1659687433"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="Saikat-mySlides_fade">
+        <div class="numbertext">5 / 5</div>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_home_top_7ad6b900-1b7f-4dc5-93f5-a2ee54906b6d.jpg?v=1660218807"
+          style="width: 100%"
+        />
+      </div>
+    </div>
+    <!-- Dot part  -->
+    <div style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <p class="middle_one">Loved By</p>
+    <h1 class="middle_two">10 Lakh+ Customers</h1>
+
+    <!-- 2nd HTML part  -->
+    <div id="main_div">
+      <span onclick="prevoius()" id="left_slider1"> < </span>
+      <span onclick="next()" id="right_slider2"> > </span>
+      <div id="image"></div>
+    </div>
+    <div style="text-align: center">
+      <span class="dot" id="dot_1"></span>
+      <span class="dot" id="dot_2"></span>
+      <span class="dot" id="dot_3"></span>
+    </div>
+
+    <p class="middle_one">SHOP OUR</p>
+    <h1 class="middle_two">NEW ARRIVALS</h1>
+
+    <!-- 3rd part -->
+
+    <div id="copy"></div>
+    <button onclick="left()" id="left3"><</button>
+    <button onclick="right()" id="right3">></button>
+
+    <!-- 4th part -->
+
+    <p class="middle_one">OUR</p>
+    <h1 class="middle_two">BESTSELLERS</h1>
+    <p class="middle_three">
+      <span style="color: red">SKIN</span> | BODYCARE | HAIRCARE | NUTRITION
+    </p>
+
+    <div id="copy4"></div>
+    <button onclick="left4()" id="left4"><</button>
+    <button onclick="right4()" id="right4">></button>
+
+    <!-- 5th + 6th part  -->
+
+    <p class="middle_one">IN THE</p>
+    <h1 class="middle_two">SPOTLIGHT</h1>
+
+    <div id="five_div">
+      <div>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_7.jpg?v=1660219323"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/hyaluronic_1.png?v=1659682274"
+          alt=""
+        />
+      </div>
+    </div>
+    <div id="six_div">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_8.jpg?v=1660219412"
+        alt=""
+      />
+    </div>
+
+    <!-- 7th part  -->
+
+    <p class="middle_one">SHOP OUR</p>
+    <h1 class="middle_two">TOP CATEGORIES</h1>
+    <p class="middle_three">
+      <span style="color: red">FACE CREAMS</span> | FACE SERUMS | FACE WASHES |
+      FACE MASKS
+    </p>
+
+    <!-- 8th part  -->
+
+    <div id="eight_div"></div>
+
+    <!-- 9th part -->
+
+    <div style="width: 100%; margin-top: 4pc; margin-bottom: 3pc">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/0_new_appArtboard_1_1_1.png?v=1656572545"
+        alt=""
+      />
+    </div>
+  </body>
+</html>
+
+<!-- 10th part  -->
+
+<div class="head">
+  <p>SHPO BY</p>
+  <h2><i>INGREDIENTS</i></h2>
+</div>
+<div class="main-carousel">
+  <div class="carousel-cell">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4A-Ingredient_59568eab-2c0c-409e-969f-995724d15822.jpg?v=1656504214"
+      alt=""
+    />
+  </div>
+  <div class="carousel-cell">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4F-Ingredient_73eaecaf-da67-4a0a-8884-ab3215f5d1ce.webp?v=1656504213"
+      alt=""
+    />
+  </div>
+  <div class="carousel-cell">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4D-Ingredient_2c86db10-ce47-4ff7-9792-2ebf0192e29e.webp?v=1656504214"
+      alt=""
+    />
+  </div>
+  <div class="carousel-cell">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4C-Ingredient_4fe5dffa-6a19-4655-8e54-58771389a60e.jpg?v=1656504213"
+      alt=""
+    />
+  </div>
+  <div class="carousel-cell">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4E-Ingredient_75210377-ce38-46c6-8dc9-8c7ae2d78ba5.jpg?v=1656504214"
+      alt=""
+    />
+  </div>
+  <div class="carousel-cell">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4B3-Ingredient_3_bd0c6f74-087c-4096-8d4b-15f289b1d976_3.webp?v=1656504213"
+      alt=""
+    />
+  </div>
+</div>
+<!-- <div class="slide_show">
+        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Group_276.png?v=1654513702" />
+    </div> -->
+<div class="head2">
+  <p>GUIDE TO</p>
+  <h2><i>SKINCARE</i></h2>
+</div>
+<div class="hight">
+  <div class="cell">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/glow_3.jpg?v=1652438348"
+      alt=""
+    />
+  </div>
+  <div class="cell">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/acne_3_7d4b5389-228e-42ce-9008-0454cff9e3d2.jpg?v=1652438447"
+      alt=""
+    />
+  </div>
+  <div class="cell">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/moist.jpg?v=1652438356"
+      alt=""
+    />
+  </div>
+  <div class="cell">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/serum.jpg?v=1652438356"
+      alt=""
+    />
+  </div>
+</div>
+<div class="middle">
+  <img
+    src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/D_K_Homepage_BOGO_Banner_Desktop_Version.gif?v=1659006084"
+  />
+
+  <h2><i>LOVE IS GREATER</i></h2>
+  <p>WHEN SHARED</p>
+  <img
+    src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Untitled-2_6_1.png?v=1656572658"
+  />
+</div>
+<div>
+  <div class="haed3">
+    <h2><i>CLEAN BEAUTY</i></h2>
+    <p>WITH UNCOMPROMISED EFFICACY</p>
+  </div>
+  <div class="para">
+    <p>
+      At Dot & Key, we strive to find the missing <i>"dots"</i> in your skincare
+      regime and are obsessed with providing solutions or <i> "keys"</i> to
+      these.
+      <br />
+      Our revolutionary products are crafted with utmost care and love for you.
+      By blending <i> luxurious botanicals</i> with
+      <i>high performance actives</i>, we bring to you clean formulations that
+      are absolutely safe, delightfully gentle and unquestionably effective.
+    </p>
+  </div>
+</div>
+<div class="img">
+  <div class="hh">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/3-ICONS.png?v=1645770027"
+      alt=""
+    />
+  </div>
+  <div>
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1-ICONS_b6233563-9f3e-43f6-b158-5205886e2120.png?v=1645779546"
+      alt=""
+    />
+  </div>
+  <div>
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4-ICONS.png?v=1645770027"
+      alt=""
+    />
+  </div>
+  <div>
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/2-ICONS.png?v=1645770027"
+      alt=""
+    />
+  </div>
+</div>
+<div class="h">
+  <h3><i>AS SEEN IN</i></h3>
+</div>
+<div class="jj">
+  <div>
+    <p>
+      "Latest and greatest natural <br />
+      products for safe, non-toxic <br />
+      skincare."
+    </p>
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/elle-magazine-vector-logo-3_9501c881-18bc-4482-a41a-bae5979fd0b9_180x.png?v=1596894078"
+    />
+  </div>
+  <div>
+    <p>
+      "Dot & Key are hoping to spotlight <br />
+      all the body parts you forget to <br />
+      look after."
+    </p>
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Vogue-3-min_180x.png?v=1600165794"
+      alt=""
+    />
+  </div>
+  <div>
+    <p>
+      "Even a 10 step routine can have <br />
+      blind spots. Dot & key fills in those <br />
+      gaps."
+    </p>
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/elle-magazine-vector-logo-2_8a4b49eb-9d7c-4864-954a-fe48fb05a208_180x.png?v=1596894127"
+    />
+  </div>
+</div>
+<div class="lll">
+  <p>CUSTOMER</p>
+  <h2><i>REVIEWS</i></h2>
+</div>
+<div class="last1">
+  <div class="nnn">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/vish.png?v=1656676713"
+      alt=""
+    />
+    <h4>
+      <i> Vitamin C Face Cream: Perfect for my uneven skin & dark spots</i>
+    </h4>
+    <p>
+      I had very dry & flaky skin. My friend suggested that I try the Vitamin C+
+      E face cream. Since I've been using it for 4 weeks & I can already notice
+      the difference. My skin tone has evened and it feels nourished & looks
+      more radiant. It is oil-free & quick absorbing. I'm a forever fan! Ishana
+      Kapoor
+    </p>
+  </div>
+  <div class="nnn">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Daveena_Jha.png?v=1657694543"
+      alt=""
+    />
+    <h4><i> The Lip Plumping Sleep Maskl: My Lips Love It!!!</i></h4>
+    <p>
+      The Lip Plumping Sleep Mask infused with Vitamin C is truly magical! I
+      have been regularly using this for 2 months now & I am noticing the
+      difference. My lips feel plumper & pinker. What's best, I can use it as a
+      lip balm too! Loving my filter-free pouts on Insta! Deveena Jha
+    </p>
+  </div>
+  <div class="nnn">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Kamakshi_Shetty.png?v=1657694543"
+      alt=""
+    />
+    <h4>
+      <i> Retinol Night Cream: Works like MAGIC on my wrinkles & fine lines</i>
+    </h4>
+    <p>
+      My skin feels so firm & nourished. I could see the fine lines fading
+      within 2 weeks of using & I'm totally in love with this Retinol Night
+      Cream. So happy I found the one that best suits my sensitive skin. A
+      complete must have in your PM skincare routine. Kamakshi Shetty
+    </p>
+  </div>
+  <div class="nnn">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Aman_Shah.png?v=1657694543"
+      alt=""
+    />
+    <h4>
+      <i
+        >72 HR Hydrating Probiotic Gel Moisturizer: Perfect for hydrating your
+        skin!</i
+      >
+    </h4>
+    <p>
+      Dry, dehydrated skin can be a nightmare.But I can happily say that's not
+      the case for me. The 72 Hr Hydrating Gel is my skin's BFF! From the first
+      2-3 uses itself I realized that this face cream really hydrates skin
+      deeply. My skin feels healthier, softer & more supple. I think I'm in love
+      I with this one! Aman Shah
+    </p>
+  </div>
+  <div class="nnn">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/IMG-0776.png?v=1656677366"
+      alt=""
+    />
+    <h4>
+      <i
+        >Salicylic & French Green Clay Face Mask: Instant Results, Zero Side
+        Effects!</i
+      >
+    </h4>
+    <p>
+      Using this product every Sunday, for a month now & my skin has never felt
+      better. I noticed that it has minimized the appearance of my acne, dark
+      spots & blemishes. It's been a lifesaver for me & after each use, my skin
+      feels calm, clear & rested. I totally recommend this one! Gurpreet Singh
+      Sandhu
+    </p>
+  </div>
+</div>
+<div class="ooo">
+  <p>OUR</p>
+  <h1><i>SKINCARE JOURNAL</i></h1>
+</div>
+<div class="last">
+  <div class="mmm">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/articles/image9_1.jpg?v=1658905958"
+      alt=""
+    />
+    <h5><i>Layer Your Skincare Right From AM to PM</i></h5>
+    <p>Bought a pile of skincare products...</p>
+    <p>read more ></p>
+  </div>
+  <div class="mmm">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/articles/image1_1_d1894192-0d62-4a6f-a979-5b6aef28fbf9.jpg?v=1660732620"
+      alt=""
+    />
+    <h5><i>Things You Didn't Know Vitamin C Could Do For Your Skin</i></h5>
+    <p>Everybody keeps talking about how...</p>
+    <p>read more ></p>
+  </div>
+  <div class="mmm">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/articles/image4_1.jpg?v=1658905983"
+      alt=""
+    />
+    <h5>
+      <i>skin Porse: Can Thaey Be Tighttened?Know What Works Your Porse</i>
+    </h5>
+    <p>Worried about those prominent ap...</p>
+    <p>read more ></p>
+  </div>
+  <div class="mmm">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/articles/image4_1090475a-9d80-4551-9acf-de970174b2e2_900x_1.jpg?v=1658905938"
+      alt=""
+    />
+    <h5><i>Don't Let The Rains Ruin Your Hair Care Game!</i></h5>
+    <p>Monsoons are lovely ,but they also...</p>
+    <p>read more ></p>
+  </div>
+</div>
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<script src="./scripts/index.js"></script>
+
+
+
+
+                <!-- Footer Part  -->
+
+
+<!-- Footer Start -->
+<div id="footer">
+  <div>
+     <p class="get"> GET TO KNOW US</p>
+     <h3 class="abo">ABOUT US</h3>
+     <h3 class="abo">CONTACT US</h3>
+     <h3 class="abo">EARTHCARE</h3>
+     <h3 class="abo">AFFILIATE PROGRAM</h3>
+     <h3 class="abo">TERMS & CONDITION</h3>
+     <h3 class="abo">REFUND & CANCELLATION</h3>
+     <h3 class="abo">PRIVACY POLICY</h3>
+     <h3 class="abo">ORDER & SHIPPING</h3>
+     <h3 class="abo">PAYMENT TERMS</h3>
+     <h3 class="abo">TERMS OF SERVICE</h3>
+     <h3 class="abo">REFUND POLICY</h3>
+  </div>
+  <div id="store">
+      <p class="get">ALSO AVAILABLE ON</p>
+      <a href="https://www.nykaa.com/brands/dot-key/c/7675?root=search,brand_menu,brand_list,Dot%20&%20Key&sourcepage=home&rtqu=Dot%20%26%20Key"><h3 class="abo">NYKAA</h3></a>
+      <a href="https://www.amazon.in/stores/node/19401367031?_encoding=UTF8&field-lbr_brands_browse-bin=Dot%20%26%20Key&ref_=bl_dp_s_web_19401367031"><h3 class="abo">AMAZON</h3></a>
+      <a href="https://www.flipkart.com/search?q=dot%20and%20key&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><h3 class="abo">FLIPKART</h3></a>
+     <a href="https://www.myntra.com/dot-and-key?src=bc"><h3 class="abo">MYNTRA</h3></a>
+  </div>
+  <div >
+      <p class="get">STAY UPDATED</p>
+      <div id="stay">
+      <input type="email" placeholder="example@example.com" id="ex">
+      <button class="submit">Submit</button>
+  </div>
+  <button class="app">DOWNLOAD THE APP</button>
+  <div id="follow">
+      <h3 class="abo">FOLLOW US</h3>
+      <img class="fb" src="https://icon-library.com/images/facebook-icon-vector-black-and-white/facebook-icon-vector-black-and-white-2.jpg" alt="fb">
+      <img class="insta" src="https://thumbs.dreamstime.com/b/instagram-logo-icon-voronezh-russia-january-black-square-soft-shadow-171161232.jpg" alt="insta">
+      <img class="yt" src="https://img.favpng.com/16/16/23/youtube-brand-computer-icons-video-png-favpng-LKUXNZY0bA8S6MLw40mzn0KHh.jpg" alt="youtube">
+  </div>
+  <h4 class="dot-footer">© 2022 Dot & Key</h4>
+  </div>
+</div>
+<!-- Footer End -->
+
+
+
+
+
+
+
+
