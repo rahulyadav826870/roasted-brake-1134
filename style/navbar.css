@@ -23,10 +23,14 @@
     display: flex;
     justify-content: center;
     position:absolute;
-
+    
+    width: 20%;
+    height: 60%;
+    margin-left:42%;
+    margin-top:0px;
 }
 .searchText{
-    border: 1px solid red;
+    
     margin-top: 25px;
     padding-left:20px;
     margin-left: 780px;
@@ -46,46 +50,43 @@
 .searchbtn{
     border-radius: 50px;
     width:40px;
-    
     height:40px;
     background-color:rgb(252, 220, 220);
     color: rgba(202, 20, 20, 0.852);
     position:absolute;
-    margin-left: 1040px;
-    margin-top: 31px;
+    margin-left:82%;
+    margin-top:30px;
     display: grid;
     place-items: center;
 
 }
 .searchBox:hover > .searchText{
+    border: 1px solid green;
     width: 300px;
     height: 50px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left:10%;
+    margin-bottom:230px;
+   
 }
-.searchBox:hover > .searchText{
-    background-color: #fff;
-    color: blue;
-}
+.s
 
-.cartIcon{
-   border: none;
-    width: 30px;
-    height: 30px;
+.cartIcon{   
+    height:0px;
     margin-left:5px;
 }
 .cartbtn{
     border: none;
+    
 }
 #loginIcon{
     padding-top: 10px;
-    padding-left: 10px;
+    
     width: 50px;
-    height: 40px;
-
+    height: 50px;
+    margin-bottom:5px;
 }
 
 .loginbtn{ 
-     padding-left: 10px;
     
     border: none;
 }
@@ -122,7 +123,8 @@
     width: 30px;
     height: 30px;
     cursor: pointer;
-    margin-left: 50px;
+    margin-left:40px;
+    margin-bottom: 10px;
     
 }
 .logobtn{
