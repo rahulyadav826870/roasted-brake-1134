@@ -1,0 +1,296 @@
+*{  
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#header{
+    width:100%;
+    height: 60px;
+    color: wheat;
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color: #50504b;
+   
+    
+}
+.searchBox{
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    
+    width: 20%;
+    height: 60%;
+    margin-left:42%;
+    margin-top:0px;
+}
+.searchText{
+    
+    margin-top: 25px;
+    padding-left:20px;
+    margin-left: 780px;
+    width:0px;
+    height:0px;
+    border-radius:50px;
+    border: none;
+    outline: none;
+    background-color:rgb(243, 244, 244);
+    transition: all 0.2 linear;
+
+}
+.searchText:focus{
+    outline: none;
+   
+}
+.searchbtn{
+    border-radius: 50px;
+    width:40px;
+    height:40px;
+    background-color:rgb(252, 220, 220);
+    color: rgba(202, 20, 20, 0.852);
+    position:absolute;
+    margin-left:82%;
+    margin-top:30px;
+    display: grid;
+    place-items: center;
+
+}
+.searchBox:hover > .searchText{
+    border: 1px solid green;
+    width: 300px;
+    height: 50px;
+    margin-left:10%;
+    margin-bottom:230px;
+   
+}
+.s
+
+.cartIcon{   
+    height:0px;
+    margin-left:5px;
+}
+.cartbtn{
+    border: none;
+    
+}
+#loginIcon{
+    padding-top: 10px;
+    
+    width: 50px;
+    height: 50px;
+    margin-bottom:5px;
+}
+
+.loginbtn{ 
+    
+    border: none;
+}
+#navbar2{
+    text-align: center;
+    height: 110px;
+    border: 1px solid gray;
+    background-color: #f9f6f6;
+    display: flex;
+    justify-content: space-around;
+    padding-top:20px;
+    margin-top: -20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background:white;
+
+}
+.menubtn{
+    border: none;
+
+}
+.menuIcon{
+    margin-top: 20px;
+    border: none;
+    width: 50px;
+    height: 40px;
+    margin-left: -80px;
+    
+}
+.trackingIcon{
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left:40px;
+    margin-bottom: 10px;
+    
+}
+.logobtn{
+    border: none;
+}
+.logoIcon{
+    margin-top:-15px;
+    
+    width: 300px;
+    height: 100px;
+    margin-left: 200px;
+}
+#tpart{ 
+   margin-left: 20px;
+   margin-top:25px;
+ 
+    
+}
+
+
+/* Menu */
+#mainmenu{
+    width: 100%;
+        position: absolute;
+        margin-top: 0%;
+      
+        display: none;
+        z-index: 1;
+}
+#menu{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    height:510px;
+    display: flex;
+    margin-top: 50px;
+    opacity: 1;
+    
+
+}
+#smenu{
+   
+    width: 50%;
+}
+
+
+::-webkit-scrollbar{
+    width: 2px;
+}
+.sidebar{
+    margin-top: 20px;
+    width:50%;
+    height:480px;
+    overflow-y: scroll;
+    margin-left:20px;
+    background-color: rgb(205, 202, 198);
+}
+.sidebar ul li{
+    line-height: 60px;
+    
+}
+.sidebar ul li a{
+   position: relative;
+    color: rgb(163, 78, 33);
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    
+}
+.sidebar ul li a:hover{
+ 
+    color:rgb(20, 166, 73);
+    background: rgb(208, 168, 168);
+    border-left-color: rgb(41, 193, 193);
+}
+.sidebar ul ul{ 
+    position: static;   
+}
+
+.sidebar ul ul li{
+  
+ line-height:60px;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sidebar ul ul li a{
+    
+    font-size:19px;
+    color: rgb(60, 128, 105);
+    line-height: 50px;
+    padding-left: 150px;
+   
+}
+#smenu>img{
+
+    border-radius: 20px;
+    height: 400px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: antiquewhite;
+}
+.in{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  
+}
+.in>p{
+   position: relative;
+    font-weight:bold;
+    margin-right: 10px;
+    font-size:20px;
+    color: black;
+    cursor: pointer;
+    text-align: end;
+    /* transform: translateY(-10%); */
+    margin-top: -60px;
+    /* transition: transform 0.4s; */
+}
+/* p:hover{
+    transform: translateY(-10%) rotate(-180deg);
+} */
+
+
+
+#in-show{
+    display: none;
+}
+#co-show{
+    display: none;
+}
+#pr-show{
+    display: none;
+}
+#be-show{
+    display: none;
+}
+#pr-show2{
+    display: none;
+}
+
+
+
+
+
+       /* The sidebar menu */
+       .cart {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0;
+        right: 0;
+        background-color: #FFFF; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+      }
+
+
+      .cart a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      

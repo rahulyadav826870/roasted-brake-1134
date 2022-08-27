@@ -1636,9 +1636,29 @@ let filter = document.getElementById("filter");
   })
 
 
-let cart = JSON.parse(localStorage.getItem("cart"))||[]
+let products = JSON.parse(localStorage.getItem("products"))||[]
 let addTocart=(data)=>{
+<<<<<<< HEAD
   console.log(cart)
   cart.push(data);
   localStorage.setItem("cart",JSON.stringify(cart))
 }
+=======
+  alert(`${data.title} is added to cart`)
+  console.log(products)
+  products.push(data);
+  localStorage.setItem("cart",JSON.stringify(products))
+}
+
+
+import navbar from "./navbarhtml.js"
+
+let import_navbar = document.getElementById("navbar");
+import_navbar.innerHTML=navbar();
+
+
+//navbar functionality
+
+
+
+>>>>>>> f6732fd35032ec8f602265d1d75b96a778cc0248
