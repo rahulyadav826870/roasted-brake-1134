@@ -1592,10 +1592,58 @@ let appendData=(data)=>{
 }
 
 appendData(data);
+let filter = document.getElementById("filter");
+
+  filter.addEventListener("change",function(){
+    if(filter.value === "position"){
+        appendData(data);
+        window.location.reload(true);
+     }
+    // else if (filter.value === "NewArrival"){
+    //     let filtered = data.filter(function(element){
+    //         return element.nwearrival===1;
+    //     })
+    //     appendData(filtered);
+    else if (filter.value === "LowToHigh"){
+       let priceLH = data.sort(function(a,b){
+            if(a.price > b.price) return 1
+            if(a.price < b.price) return -1
+            return 0
+        })
+       appendData(priceLH);
+    }else if (filter.value === "HighToLow"){
+        let priceHL = data.sort(function(a,b){
+             if(a.price > b.price) return -1
+             if(a.price < b.price) return 1
+             return 0
+         })
+        appendData(priceHL);
+     }else if (filter.value === "sortZtoA"){
+        let nameP = data.sort(function(a,b){
+             if(a.title > b.title) return -1
+             if(a.title < b.title) return 1
+             return 0
+         })
+        appendData(nameP);
+     }else if (filter.value === "sortAtoZ"){
+        let nameP = data.sort(function(a,b){
+             if(a.title > b.title) return 1
+             if(a.title < b.title) return -1
+             return 0
+         })
+        appendData(nameP);
+     }
+  })
 
 
 let products = JSON.parse(localStorage.getItem("products"))||[]
 let addTocart=(data)=>{
+<<<<<<< HEAD
+  console.log(cart)
+  cart.push(data);
+  localStorage.setItem("cart",JSON.stringify(cart))
+}
+=======
   alert(`${data.title} is added to cart`)
   console.log(products)
   products.push(data);
@@ -1613,3 +1661,4 @@ import_navbar.innerHTML=navbar();
 
 
 
+>>>>>>> f6732fd35032ec8f602265d1d75b96a778cc0248
