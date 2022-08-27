@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/d_and_k_and_logo_1_32x32.png?v=1593074179">
+    <link rel="stylesheet" href="./style/navbar.css">
 </head>
 <body>
     <div id="navbar">
@@ -17,17 +18,22 @@
 
     <div id="cart-container">
         <h1>Bag</h1>
-        <span id="quntity">PRODUCT</span><span id="total">TOTAL</span>
-        <div id="product">
+        <span id="quntity" style="    font-size: 20px;">PRODUCT</span><span id="total" style="    font-size: 20px;">TOTAL</span>
+        <div id="cart-product">
             
         </div>
     </div>
-    <hr>
+    <hr style="    margin-top: 2%;
+    margin-bottom: 2%;">
     <div id="subtotalDiv">
         <div >
 
             <h1>Subtotal</h1>
-            <h3 id="subtotal" style="color: grey;"></h3>
+            <h3 id="subtotal" style="    margin-left: 80%;
+            color: grey;
+            font-size: 26px;
+            margin-top: -2%;
+            margin-bottom: 3%;"></h3>
         </div>
         <div style="margin-bottom: 2000px;">
             <a href="checkout.html"><button class="checkoutbtn" id="checkout">Check Out</button></a>
@@ -44,3 +50,5 @@
 </body>
 </html>
 <script src="./scripts/cart.js" type="module" ></script>
+
+<script src="./script/navbar.js"></script>

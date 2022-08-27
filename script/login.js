@@ -1,5 +1,9 @@
 // Navbar Start//
 
+import navbar from "../component/navbar.js"
+
+let navbar1=document.querySelector("#navbar")
+navbar1.innerHTML=navbar()
 
 document.querySelector("#login-btn").addEventListener("click",loginApp);
   let loginArr=JSON.parse(localStorage.getItem("customerData"))||[]
@@ -22,7 +26,7 @@ document.querySelector("#login-btn").addEventListener("click",loginApp);
    if(flag){
   alert("Log In Sucessfully");
   localStorage.setItem("system","online")
-  window.location.href="./index,html"
+  window.location.href="index.html"
   
    }
    else{

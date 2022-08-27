@@ -7,7 +7,7 @@ body
 #cart-container{
     width: 80%;;
     margin: auto;
-    margin-top: 250px;
+    margin-top: 28px;
 }
 
 
@@ -33,6 +33,7 @@ body
 }
 
 #cart-container div div{
+    margin-top: 18px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: normal;
     color: #3C3C3C;
@@ -50,6 +51,7 @@ body
 .product>img{
     width: 100px;
     height: 100px;
+    padding: 5px;
 }
 .product{
     display: flex;

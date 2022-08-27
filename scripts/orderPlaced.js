@@ -1,6 +1,9 @@
+import navbar from "../component/navbar.js"
 
+let navbar1=document.querySelector("#navbar")
+navbar1.innerHTML=navbar()
 
-let userCart=JSON.parse(localStorage.getItem("cartItem"));
+let userCart=JSON.parse(localStorage.getItem("products"));
 let prodBag=JSON.parse(localStorage.getItem("products"));
 console.log(userCart)
 
@@ -11,57 +14,57 @@ let total=0;
 
 
 // DONE WHEN DATA COLLECT FROM HOME PAGE
-// userCart.map((item, index) => {
-//   //console.log(item)
+userCart.map((item, index) => {
+  //console.log(item)
   
-//     let prod = prodBag.filter((el) => {
-//       if (item.id === el.id) {
-//         return true;
-//       }
-//     });
+    let prod = prodBag.filter((el) => {
+      if (item.id === el.id) {
+        return true;
+      }
+    });
 
-//     let tr=document.createElement("tr");
+    let tr=document.createElement("tr");
 
-//     let sr=document.createElement("td")
-//     sr.textContent=index+1;
-
-
-//     let title=document.createElement("td");
-//     title.textContent=prod[0].title;
+    let sr=document.createElement("td")
+    sr.textContent=index+1;
 
 
-//     let quantity=document.createElement("td")
-//     if(item.quantity){
-
-//         quantity.textContent=item.quantity;
-//     }else{
-//         quantity.textContent=1;
-//     }
+    let title=document.createElement("td");
+    title.textContent=prod[0].name;
 
 
-//     let size=document.createElement("td")
-//     if(item.size){
-//         if(item.size=="Default"){
-//             console.log(prod[0].size)
-//             size.textContent=prod[0].size[0]
-//         }else{
+    let quantity=document.createElement("td")
+    if(item.quantity){
 
-//             console.log(item.size)
-//             size.textContent=item.size;
-//         }
-//     }
+        quantity.textContent=item.quantity;
+    }else{
+        quantity.textContent=1;
+    }
 
 
-//     let price=document.createElement("td");
-//     price.textContent=prod[0].price;
-//     total+=+prod[0].price;
+    let size=document.createElement("td")
+    if(item.size){
+        if(item.size=="Default"){
+            console.log(prod[0].size)
+            size.textContent=prod[0].size[0]
+        }else{
+
+            console.log(item.size)
+            size.textContent=item.size;
+        }
+    }
 
 
-//     tr.prepend(sr,title,size,quantity,price);
-//     tab.append(tr)
-// })
+    let price=document.createElement("td");
+    price.textContent=prod[0].price;
+    total+=+prod[0].price;
 
-// document.getElementById("total").textContent=`Subtotal Rs.${total.toFixed(2)}`
-// document.getElementById("orderid").textContent=`Order Id. 288734${Math.floor(Math.random()*10000)}`
+
+    tr.prepend(sr,title,size,quantity,price);
+    tab.append(tr)
+})
+
+document.getElementById("total").textContent=`Subtotal Rs.${total.toFixed(2)}`
+document.getElementById("orderid").textContent=`Order Id. 288734${Math.floor(Math.random()*10000)}`
 let arr=[];
 localStorage.setItem("cartItem",JSON.stringify(arr));
