@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../style/login.css">
     <link rel="stylesheet" href="../style/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="./style/footer.css">
 </head>
 <body>
   <!-- navbar -->
@@ -38,9 +38,9 @@
     <div id="tpart">
         <img class="trackingIcon" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Group_346.svg?v=1655211633" alt="">
       <a href="#" class="cartbtn">
-        <img class="cartIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIq4p9AB9tQu9d0zKl1UMhuWZbv7Q1wZxBfA&usqp=CAU" alt="">
+        <img class="cartIcon" src="data:image/png;base64,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" alt="">
       </a>
-      <a href="" id="loginbtn">
+      <a href="./login.html" id="loginbtn">
         <img id="loginIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE7pFKhkdDUw2y5itWf4EJZAZPMaWzO3Owpw&usqp=CAU" alt="login">
       </a>
     </div>
@@ -189,7 +189,7 @@
             </ul>
         </li>
         <li>
-            <a href="">LOG IN</a>
+            <a href="./login.html">LOG IN</a>
         </li>
        </ul>
     </div>
@@ -224,6 +224,46 @@
         </div>
         <button id="login-btn">Login</button>
         <h2>Don't have an account?<a href="./signin.html">Sign In Here.</a></h2>
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div>
+           <p class="get"> GET TO KNOW US</p>
+           <h3 class="abo">ABOUT US</h3>
+           <h3 class="abo">CONTACT US</h3>
+           <h3 class="abo">EARTHCARE</h3>
+           <h3 class="abo">AFFILIATE PROGRAM</h3>
+           <h3 class="abo">TERMS & CONDITION</h3>
+           <h3 class="abo">REFUND & CANCELLATION</h3>
+           <h3 class="abo">PRIVACY POLICY</h3>
+           <h3 class="abo">ORDER & SHIPPING</h3>
+           <h3 class="abo">PAYMENT TERMS</h3>
+           <h3 class="abo">TERMS OF SERVICE</h3>
+           <h3 class="abo">REFUND POLICY</h3>
+        </div>
+        <div id="store">
+            <p class="get">ALSO AVAILABLE ON</p>
+            <a href="https://www.nykaa.com/brands/dot-key/c/7675?root=search,brand_menu,brand_list,Dot%20&%20Key&sourcepage=home&rtqu=Dot%20%26%20Key"><h3 class="abo">NYKAA</h3></a>
+            <a href="https://www.amazon.in/stores/node/19401367031?_encoding=UTF8&field-lbr_brands_browse-bin=Dot%20%26%20Key&ref_=bl_dp_s_web_19401367031"><h3 class="abo">AMAZON</h3></a>
+            <a href="https://www.flipkart.com/search?q=dot%20and%20key&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><h3 class="abo">FLIPKART</h3></a>
+           <a href="https://www.myntra.com/dot-and-key?src=bc"><h3 class="abo">MYNTRA</h3></a>
+        </div>
+        <div >
+            <p class="get">STAY UPDATED</p> 
+            <div id="stay">
+            <input type="email" placeholder="example@example.com" id="ex">
+            <button class="submit">Submit</button>
+        </div>
+        <button class="app">DOWNLOAD THE APP</button>
+        <div id="follow">
+            <h3 class="abo">FOLLOW US</h3>
+            <img class="fb" src="https://icon-library.com/images/facebook-icon-vector-black-and-white/facebook-icon-vector-black-and-white-2.jpg" alt="fb">
+            <img class="insta" src="https://thumbs.dreamstime.com/b/instagram-logo-icon-voronezh-russia-january-black-square-soft-shadow-171161232.jpg" alt="insta">
+            <img class="yt" src="https://img.favpng.com/16/16/23/youtube-brand-computer-icons-video-png-favpng-LKUXNZY0bA8S6MLw40mzn0KHh.jpg" alt="youtube">
+        </div>
+        <h4 class="dot">© 2022 Dot & Key</h4>
+        </div>
+
     </div>
 </body>
 </html>

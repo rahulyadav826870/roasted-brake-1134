@@ -9,11 +9,11 @@
   let c=document.getElementById("email")
   let d=document.getElementById("password")
   if(firstname.value==""||b.value==""||c.value==""||d.value==""){
-    alert("enter all the fields")
+    alert("Enter All The Fields")
     return
   }
   if(!c.value.includes("@")){
-    alert("enter valid email")
+    alert("Enter Valid Email")
     return
   }
   let customerObj={
