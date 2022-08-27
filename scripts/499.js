@@ -183,3 +183,9 @@ let addTocart=(data)=>{
   cart.push(data);
   localStorage.setItem("cart",JSON.stringify(cart))
 }
+
+
+import navbar from "./navbarhtml.js";
+console.log(navbar)
+let navbar_container = document.getElementById("navbar");
+navbar_container.innerHTML=navbar();

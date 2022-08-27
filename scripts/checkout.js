@@ -104,10 +104,12 @@ document.getElementById("total").innerText=total;
 function applyCoupon(){
 let code = document.getElementById("coupon_code").value;
 if(code=="masai20"){
-    let discount=Number(total/100*20);
-    document.getElementById("total").innerText=Number(total)-discount;;
-    document.getElementById("discount").innerText="Saved 20% using masai20 coupon code 🎉🎉🎉";
-    document.getElementById("discount").style.color="green"
+    let discount=Math.floor( Number(total/100*20));
+    let Total=Number(total)-discount;
+    document.getElementById("total").innerText=Number(total)-discount;
+    document.getElementById("discount").innerText=`Saved ${discount} using masai20 coupon code 🎉🎉🎉`;
+    document.getElementById("discount").style.color="green";
+    localStorage.setItem("total_price",JSON.stringify(Total));
 }else{
     document.getElementById("discount").innerText="Inavalid coupon code";
     document.getElementById("discount").style.color="red"

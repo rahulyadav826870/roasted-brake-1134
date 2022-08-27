@@ -1638,12 +1638,6 @@ let filter = document.getElementById("filter");
 
 let products = JSON.parse(localStorage.getItem("products"))||[]
 let addTocart=(data)=>{
-<<<<<<< HEAD
-  console.log(cart)
-  cart.push(data);
-  localStorage.setItem("cart",JSON.stringify(cart))
-}
-=======
   alert(`${data.title} is added to cart`)
   console.log(products)
   products.push(data);
@@ -1658,7 +1652,3 @@ import_navbar.innerHTML=navbar();
 
 
 //navbar functionality
-
-
-
->>>>>>> f6732fd35032ec8f602265d1d75b96a778cc0248
