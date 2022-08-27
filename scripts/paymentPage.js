@@ -1,12 +1,12 @@
-let cartDiv = document.getElementById("cartBox");
+// // let cartDiv = document.getElementById("cartBox");
 
 
-let cartBag = JSON.parse(localStorage.getItem("cartItem"));
-let prod = JSON.parse(localStorage.getItem("products"));
+// let cartBag = JSON.parse(localStorage.getItem("cartItem"));
+// let prod = JSON.parse(localStorage.getItem("products"));
 
-console.log(cartBag)
+// console.log(cartBag)
 
-let totalAmount = 0;
+// let totalAmount = 0;
 // cartBag.map((item) => {
 //     let x = prod.filter((el) => {
 //         if (item.id === el.id) {
@@ -41,10 +41,10 @@ let totalAmount = 0;
 //     cartDiv.append(div)
 
 // })
-document.getElementById("subtotal").textContent = `Subtotal. Rs. ${totalAmount.toFixed(2)}`
-document.getElementById("total").textContent = `Total Rs. ${totalAmount.toFixed(2)}`
-let add = JSON.parse(localStorage.getItem("addAddress"))
-console.log(add)
+// document.getElementById("subtotal").textContent = `Subtotal. Rs. ${totalAmount.toFixed(2)}`
+// document.getElementById("total").textContent = `Total Rs. ${totalAmount.toFixed(2)}`
+// let add = JSON.parse(localStorage.getItem("addAddress"))
+// console.log(add)
 
 // let str = `${add[0].firstname} ${add[0].lastname} ${add[0].address_one} ${add[0].address_two} ${add[0].pincode} ${add[0].city} ${add[0].state} ${add[0].country}`
 // console.log(str)

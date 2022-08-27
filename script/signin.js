@@ -1,4 +1,11 @@
 
+
+
+import navbar from "../component/navbar.js"
+
+let navbar1=document.querySelector("#navbar")
+navbar1.innerHTML=navbar()
+
   document.querySelector(".create-btn").addEventListener("click",myproductApp);
   let customerArr=JSON.parse(localStorage.getItem("customerData"))||[]
   function myproductApp(){

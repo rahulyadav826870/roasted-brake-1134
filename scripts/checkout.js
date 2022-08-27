@@ -1,8 +1,8 @@
-let userDataFromlogin = JSON.parse(localStorage.getItem("customerData"));
+let userDataFromlogin = JSON.parse(localStorage.getItem("customerData")) || [];
 
-//  let name1=document.getElementById("user_details_name");
-//  name1.textContent=`${userDataFromlogin.name}`;
- 
+ let name1=document.getElementById("user_details_name");
+ name1.textContent=userDataFromlogin[0].cEmail;
+ console.log(name1)
 
 let address = JSON.parse(localStorage.getItem("address_Info")) || [];
 
@@ -10,6 +10,7 @@ let address = JSON.parse(localStorage.getItem("address_Info")) || [];
 
  function addressFun(e) {
      e.preventDefault();
+ let user_detail = JSON.parse(localStorage.getItem("customerData")) || [];
      
  var addressObj = {
      country:form.use_address1.value,
@@ -22,7 +23,7 @@ let address = JSON.parse(localStorage.getItem("address_Info")) || [];
      pincode: form.pin_code.value,
      phonenum: form.phone_num.value,
      saveInfo: form.save_info.value,
-     email:user_detail.email
+     email:user_detail.cEmail
  };
 
  console.log(addressObj);
@@ -87,7 +88,7 @@ cartBag.forEach((el)=>{
  console.log(typeof(disc))
  disc = Number(el.price) - disc;
  totalAmount+=+disc;
- price.innerHTML= `&#8377; ${disc.toFixed(2)}`;
+ price.innerHTML= `&#8377; ${el.price}`;
 
  //console.log(el.price)
  div.append(divimg,name,price);
@@ -101,16 +102,16 @@ document.getElementById("total").innerText=total;
 
 
 
-//gift card or coupon code
-// function applyCoupon(){
-// let code = document.getElementById("coupon_code").value;
-// if(code=="masai20"){
-//     let discount=Number(total/100*20);
-//     document.getElementById("total").innerText=Number(total)-discount;;
-//     document.getElementById("discount").innerText="Saved 20% using masai20 coupon code 🎉🎉🎉";
-//     document.getElementById("discount").style.color="green"
-// }else{
-//     document.getElementById("discount").innerText="Inavalid coupon code";
-//     document.getElementById("discount").style.color="red"
-// }
-// }
+// gift card or coupon code
+function applyCoupon(){
+let code = document.getElementById("coupon_code").value;
+if(code=="masai04"){
+    let discount=Number(total/100*15);
+    document.getElementById("total").innerText=Number(total)-discount;;
+    document.getElementById("discount").innerText="Saved 15% using masai04 coupon code 🎉🎉🎉";
+    document.getElementById("discount").style.color="#50df50"
+}else{
+    document.getElementById("discount").innerText="Inavalid coupon code";
+    document.getElementById("discount").style.color="red"
+}
+}
