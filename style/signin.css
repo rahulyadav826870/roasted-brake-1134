@@ -61,7 +61,7 @@ img{
     color: wheat;
     font-size: 20px;
 }
-input{
+#signIn>div>input{
     width: 40%;
     height:50px; 
     border: none;

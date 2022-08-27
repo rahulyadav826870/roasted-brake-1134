@@ -94,6 +94,22 @@ let totalAmount=0;
 //  cartDiv.append(div)
    
 // })
+let total = JSON.parse(localStorage.getItem("subtotal"))
+document.getElementById("subtotal").innerText=total
+document.getElementById("total").innerText=total;
 
-document.getElementById("subtotal").innerHTML=`Subtotal. Rs. &#8377;}`   // data price calculation put here 
-document.getElementById("total").innerHTML=`Total Rs. &#8377;}`    // data price calculation put here 
+
+
+//gift card or coupon code
+function applyCoupon(){
+let code = document.getElementById("coupon_code").value;
+if(code=="masai20"){
+    let discount=Number(total/100*20);
+    document.getElementById("total").innerText=Number(total)-discount;;
+    document.getElementById("discount").innerText="Saved 20% using masai20 coupon code 🎉🎉🎉";
+    document.getElementById("discount").style.color="green"
+}else{
+    document.getElementById("discount").innerText="Inavalid coupon code";
+    document.getElementById("discount").style.color="red"
+}
+}
