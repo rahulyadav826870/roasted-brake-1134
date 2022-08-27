@@ -1,3 +1,5 @@
+
+
 function first(){
     let x=document.getElementById("in-show")
     let y=document.getElementById("first")
@@ -198,43 +200,43 @@ let data = [
     {
        image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/WATER_TONER.jpg?v=1658564108",
        name:"Vitamin C Super Bright Foaming Face Wash | Triple Vitamin C For",
-       price: "Rs: 280.00",
+       price: "280.00",
        add_to_cart:"ADD TO CART"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/WATERTONER_2.png?v=1658907972",
         name:"Cica + Niacinamide Face Sunscreen SPF 50 PA+++|",
-        price: "Rs: 375.00",
+        price: "375.00",
         add_to_cart:"ADD TO CART"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-3_16_1a9d9d52-bb4b-44b4-a0f3-e83b0696c320.jpg?v=1658907159",
         name:"20% Vitamin C Serum with Blood Orange & Ferulic Acid | For",
-        price: "Rs: 523.00",
+        price: "523.00",
         add_to_cart:"ADD TO CART"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/20VITC_2.png?v=1658907052",
         name: "AHA BHA & Pineapple Foaming Face Wash | 5% Lactic, Glycolic &",
-        price: "Rs: 849.00",
+        price: "849.00",
         add_to_cart:"ADD TO CART"
     },
     {
         image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-4_15.webp?v=1658907103",
         name:"Vitamin C + E Moisturizer With Sicilian Blood Orange & ",
-        price: "Rs: 231.00",
+        price: "231.00",
         add_to_cart:"ADD TO CART"
     },
     {
         image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/CICA_SUNSCREEN.jpg?v=1658564108",
         name: "CICA Niacinamide Night Gel  With Green Tea, Tea Tree Oil &",
-        price: "Rs: 520.00",
+        price: "520.00",
         add_to_cart:"ADD TO CART"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/PROBIOTICS_1_1_1_1_1_e0123849-0a5d-4c37-9ef6-96ad3836c842.jpg?v=1660732568",
         name: "Watermelon Super Glow Glycolic Toner With Lactic Acid",
-        price: "Rs: 330.00",
+        price: "330.00",
         add_to_cart:"ADD TO CART"
     }
 ]
@@ -347,43 +349,43 @@ let data4 = [
     {
        image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/LIPMASKW_APPLI_1.png?v=1658907666",
        name:"Vitamin C Super Bright Foaming Face Wash | Vitamin C For",
-       price: "Rs: 240.00",
+       price: "240.00",
        add_to_cart:"ADD TO CART"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/PROBIOTICS_1_1_1_1_1_e0123849-0a5d-4c37-9ef6-96ad3836c842.jpg?v=1660732568",
         name:"Cica + Niacinamide Face Sunscreen SPF 50 PA+++|",
-        price: "Rs: 746.00",
+        price: "746.00",
         add_to_cart:"ADD TO CART"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1-Green-Clay-Mask.png?v=1658907624",
         name:"20% Vitamin C Serum with Blood Orange & Ferulic Acid",
-        price: "Rs: 963.00",
+        price: "963.00",
         add_to_cart:"ADD TO CART"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/NIACINAMIDE_1.png?v=1658907926",
         name: "AHA BHA & Pineapple Foaming Face Wash | 5% Lactic",
-        price: "Rs: 876.00",
+        price: "876.00",
         add_to_cart:"ADD TO CART"
     },
     {
         image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/nightcream_2_2e3e7434-5b2f-4cf6-aef9-ade90482eea2.png?v=1658906872",
         name:"Vitamin C + E Moisturizer With Sicilian Blood Orange",
-        price: "Rs: 134.00",
+        price: "134.00",
         add_to_cart:"ADD TO CART"
     },
     {
         image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/20VITC_2.png?v=1658907052",
         name: "CICA Niacinamide Night Gel  With Green Tea, Tea Tree",
-        price: "Rs: 836.00",
+        price: "836.00",
         add_to_cart:"ADD TO CART"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Untitled-1_25_1.jpg?v=1660731137",
         name: "Watermelon Super Glow Glycolic Toner With Lactic Acid",
-        price: "Rs: 231.00",
+        price: "231.00",
         add_to_cart:"ADD TO CART"
     }
 ]
@@ -489,29 +491,29 @@ let data8 = [
     {
        image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Untitled-1_25_1.jpg?v=1660731137",
        name:"Vitamin C + E Moisturizer With Sicilian Blood Orange ",
-       del:"Rs: 595.00",
-       price: "Rs: 565.00",
+       del:"595.00",
+       price: "565.00",
        add_to_cart:"ADD TO CART"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/nightcream_2_2e3e7434-5b2f-4cf6-aef9-ade90482eea2.png?v=1658906872",
         name:"Retinol  & Ceramide Age Defense Night Cream For Face",
-        del:"Rs: 975.00",
-        price: "Rs: 652.00",
+        del:"975.00",
+        price: "652.00",
         add_to_cart:"ADD TO CART"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Untitled-1_3_8124891e-d162-491c-b41e-43ea643926f1.png?v=1658906811",
         name:"CICA Niacinamide Night Gel  With Green Tea, Tea Tree Oil",
-        del:"Rs: 965.00",
-        price: "Rs: 765.00",
+        del:"965.00",
+        price: "765.00",
         add_to_cart:"ADD TO CART"
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/PROBIOTICS_1_1_1_1_1_e0123849-0a5d-4c37-9ef6-96ad3836c842.jpg?v=1660732568",
         name: "Vitamin C + E Moisturizer With Sicilian Blood Orange",
-        del:"Rs: 795.00",
-        price: "Rs: 536.00",
+        del:"795.00",
+        price: "536.00",
         add_to_cart:"ADD TO CART"
     }
 ]

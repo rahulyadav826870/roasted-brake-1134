@@ -1,4 +1,4 @@
-let userDataFromlogin = JSON.parse(localStorage.getItem("userDetail"));
+let userDataFromlogin = JSON.parse(localStorage.getItem("customerData"));
 
 //  let name1=document.getElementById("user_details_name");
 //  name1.textContent=`${userDataFromlogin.name}`;
@@ -48,52 +48,53 @@ document.getElementById("return_to_shipping")
 let cartDiv=document.getElementById("cartBox");
 
 
-let cartBag=JSON.parse(localStorage.getItem("cartItem"));
-let dataFromHome=JSON.parse(localStorage.getItem("product"));
+let cartBag=JSON.parse(localStorage.getItem("products"));
+let dataFromHome=JSON.parse(localStorage.getItem("products"));
 ////console.log(dataFromHome)
 
 // console.log(cartBag)
 
 
 let totalAmount=0;
-// cartBag.forEach((el)=>{
-// //   data calculation  ,,when home work done then apply logic here 
-// let x=prod.filter((el)=>{
+cartBag.forEach((el)=>{
+//   data calculation  ,,when home work done then apply logic here 
+// let x=dataFromHome.filter((el)=>{
 //     if(item.id===el.id){
 //        return true;
 //     }
 //  })
-//  //console.log(x)
-//  let num;
-//  let div=document.createElement("div");
-//  let divimg=document.createElement("div")
-//  let img=document.createElement("img");
-//  img.src=x[0].images[0];
-//  if(item.quantity){
-//      num=item.quantity;
-//  }else{
-//      num=1;
-//  }
-//  console.log(num)
-//  let nodiv=document.createElement("div");
-//  nodiv.setAttribute("class","quantutyno");
-//  nodiv.textContent=num;
-//  let name=document.createElement("h3");
-//  name.textContent=x[0].title;
+ //console.log(x)
+ let num;
+ let div=document.createElement("div");
+ let divimg=document.createElement("div")
+ let img=document.createElement("img");
+ img.src=el.image;
+ if(el.quantity){
+     num=el.quantity;
+ }else{
+     num=1;
+ }
+ console.log(num)
+ let nodiv=document.createElement("div");
+ nodiv.setAttribute("class","quantutyno");
+ nodiv.textContent=num;
+ let name=document.createElement("h3");
+ name.textContent=el.name;
 
-//  divimg.append(nodiv,img)
-//  let price=document.createElement("h5");
-//  let disc = Math.floor((x[0].discount / 100) * x[0].price);
-//  disc = x[0].price - disc;
-//  totalAmount+=+disc;
-//  price.innerHTML= `&#8377; ${disc.toFixed(2)}`;
+ divimg.append(nodiv,img)
+ let price=document.createElement("h5");
+ let disc = Math.floor((el.discount / 100) * Number(el.price) );
+ console.log(typeof(disc))
+ disc = Number(el.price) - disc;
+ totalAmount+=+disc;
+ price.innerHTML= `&#8377; ${disc.toFixed(2)}`;
 
-//  //console.log(x[0].price)
-//  div.append(divimg,name,price);
-//  //div.innerHTML="asdsd"
-//  cartDiv.append(div)
+ //console.log(el.price)
+ div.append(divimg,name,price);
+ //div.innerHTML="asdsd"
+ cartDiv.append(div)
    
-// })
+})
 let total = JSON.parse(localStorage.getItem("subtotal"))
 document.getElementById("subtotal").innerText=total
 document.getElementById("total").innerText=total;
@@ -101,15 +102,15 @@ document.getElementById("total").innerText=total;
 
 
 //gift card or coupon code
-function applyCoupon(){
-let code = document.getElementById("coupon_code").value;
-if(code=="masai20"){
-    let discount=Number(total/100*20);
-    document.getElementById("total").innerText=Number(total)-discount;;
-    document.getElementById("discount").innerText="Saved 20% using masai20 coupon code 🎉🎉🎉";
-    document.getElementById("discount").style.color="green"
-}else{
-    document.getElementById("discount").innerText="Inavalid coupon code";
-    document.getElementById("discount").style.color="red"
-}
-}
+// function applyCoupon(){
+// let code = document.getElementById("coupon_code").value;
+// if(code=="masai20"){
+//     let discount=Number(total/100*20);
+//     document.getElementById("total").innerText=Number(total)-discount;;
+//     document.getElementById("discount").innerText="Saved 20% using masai20 coupon code 🎉🎉🎉";
+//     document.getElementById("discount").style.color="green"
+// }else{
+//     document.getElementById("discount").innerText="Inavalid coupon code";
+//     document.getElementById("discount").style.color="red"
+// }
+// }
