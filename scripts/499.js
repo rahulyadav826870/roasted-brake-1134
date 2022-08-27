@@ -133,6 +133,9 @@
 }
 appendData(data);
 
+import navbar from "./navbarhtml.js"
+let navbar_container = document.getElementById("navbar")
+navbar_container.innerHTML=navbar()
 let filter = document.getElementById("filter");
 
   filter.addEventListener("change",function(){
