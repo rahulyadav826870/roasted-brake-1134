@@ -1,4 +1,10 @@
 
+
+ import navbar from "../component/navbar.js"
+
+    let navbar1=document.querySelector("#navbar")
+    navbar1.innerHTML=navbar()
+
     var data = [
       {
         title: "DETAN + GLOW GREEN TEA CLAY MASK",
@@ -1603,10 +1609,10 @@ let addTocart=(data)=>{
 }
 
 
-import navbar from "./navbarhtml.js"
+// import navbar from "./navbarhtml.js"
 
-let import_navbar = document.getElementById("navbar");
-import_navbar.innerHTML=navbar();
+// let import_navbar = document.getElementById("navbar");
+// import_navbar.innerHTML=navbar();
 
 
 //navbar functionality
