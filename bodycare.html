@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style/navbar.css">
     <title>Document</title>
     <style>
         *{
@@ -320,6 +332,9 @@ a{
     </style>
 </head>
 <body>
+    <div id="navbar">
+        
+    </div>
     <div class="main-carousel">
         <div class="carousel-cell"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/body_desk_2.png?v=1660810000" alt=""></div>
         <div class="carousel-cell"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/bodycare_desktop.png?v=1639668460" alt=""></div>
@@ -486,3 +501,10 @@ a{
   content: true
 });
 </script>
+<script type="module">
+      import navbar from "../component/navbar.js"
+
+let navbar1=document.querySelector("#navbar")
+navbar1.innerHTML=navbar()
+</script>
+<script src="./script/navbar.js"></script>

@@ -1,106 +1,111 @@
 
+    import navbar from "../component/navbar.js"
+
+    let navbar1=document.querySelector("#navbar")
+    navbar1.innerHTML=navbar()
+    
     let data=[
       {
-        images:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/pinkclaymask_1f29e041-04b7-4b13-875e-0ffa582f92e2_360x.jpg?v=1656935595",
-        title:"VITAMIN C PINK CLAY FACE MASK",
+        image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/pinkclaymask_1f29e041-04b7-4b13-875e-0ffa582f92e2_360x.jpg?v=1656935595",
+        name:"VITAMIN C PINK CLAY FACE MASK",
         price:"499",
         price1:499,
         newarrival:1,
       },
       {
-        images:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/NIACINAMIDE_1_360x.png?v=1658907926",
-        title:"10% NIA CINAMIDE FACE SERUM",
+        image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/NIACINAMIDE_1_360x.png?v=1658907926",
+        name:"10% NIA CINAMIDE FACE SERUM",
         price:"499",
         price1:499,
         newarrival:1,
       },
       {
-        images:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1-Green-Clay-Mask_360x.png?v=1658907624",
-        title:"SALICYLIC & FRENCH GREEN MASK",
+        image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1-Green-Clay-Mask_360x.png?v=1658907624",
+        name:"SALICYLIC & FRENCH GREEN MASK",
         price:"499",
         price1:499,
         newarrival:1,
       },
       {
-        images: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/vitcsleepmask_0b41297c-7c94-4e9c-b99a-b65fe22d6f6b_360x.jpg?v=1656935552",
-         title:"PINEAPPLE GLOW VITAMIN C MASK",
+        image: "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/vitcsleepmask_0b41297c-7c94-4e9c-b99a-b65fe22d6f6b_360x.jpg?v=1656935552",
+         name:"PINEAPPLE GLOW VITAMIN C MASK",
+        price:" 499",
+        price1:499,
+        newarrival:1,
+      },
+      // {
+      //   image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Unnamed-1_4_360x.png?v=1657603288",
+      //   name:"GLOW REVEALING VITAMIN C FACE SERUM",
+      //   price:"599",
+      //   price1:599,
+      //   newarrival:1,
+      // },
+      {
+        image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/hpgp_360x.jpg?v=1656934856",
+        name:"10% AHA + 2% BHA EXFOLIATING GLOW",
+        price:"499",
+        price1:499,
+        newarrival:1,
+      },
+      {
+        image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-2_3_7231ae56-0a07-472c-92c1-7d34bc93cf57_360x.jpg?v=1648088737",
+        name:"DETAN + GLOW GREEN TEA MASK",
         price:" 499",
         price1:499,
         newarrival:1,
       },
       {
-        images:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Untitled-1_4_360x.png?v=1657603288",
-        title:"GLOW REVEALING VITAMIN C FACE SERUM",
-        price:"599",
-        price1:599,
-        newarrival:1,
-      },
-      {
-        images:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/hpgp_360x.jpg?v=1656934856",
-        title:"10% AHA + 2% BHA EXFOLIATING GLOW",
+        image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_3_40c5e702-0b60-49a1-abb2-812d62d223c0_360x.jpg?v=1648088715",
+        name:"CHOCOLATE GLOW FACE MASK",
         price:"499",
         price1:499,
         newarrival:1,
       },
       {
-        images:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-2_3_7231ae56-0a07-472c-92c1-7d34bc93cf57_360x.jpg?v=1648088737",
-        title:"DETAN + GLOW GREEN TEA MASK",
+        image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/ha_360x.jpg?v=1656934997",
+        name:"HYDARTING HYALURONIC FACE SERUM",
+        price:"499",
+        price1:499,
+        newarrival:1,
+      },
+      {
+        image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/gloes_360x.jpg?v=1656934991",
+        name:"30% AHA + 2% BHA GLOW",
+        price:"499",
+        price1:499,
+        newarrival:1,
+      },
+      {
+        image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_2_360x.jpg?v=1644862670",
+        name:"ROSHIP GLOW ELIXIR FACE OIL",
+        price:"499",
+        price1:499,
+        newarrival:1,
+      },
+      {
+        image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-4_1_10b465b9-d11f-4394-9ddd-2eef7ae4037d_360x.jpg?v=1655310309",
+        name:"DAMASK ROSE RESUFACING MASK",
         price:" 499",
         price1:499,
         newarrival:1,
       },
       {
-        images:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1_3_40c5e702-0b60-49a1-abb2-812d62d223c0_360x.jpg?v=1648088715",
-        title:"CHOCOLATE GLOW FACE MASK",
+        image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-5_1_4494a133-19ca-46ad-9ec2-19a60ad70e48_360x.jpg?v=1655310163",
+        name:"CICA CALMING RAPID MASK",
         price:"499",
         price1:499,
         newarrival:1,
       },
       {
-        images:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/ha_360x.jpg?v=1656934997",
-        title:"HYDARTING HYALURONIC FACE SERUM",
+        image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/alpha_d391f76e-ef30-427f-8657-3cfe4c8d84eb_360x.jpg?v=1656934978",
+       name:"ALHA ARBUTIN + AZELAIC SERUM",
         price:"499",
         price1:499,
         newarrival:1,
       },
       {
-        images:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/gloes_360x.jpg?v=1656934991",
-        title:"30% AHA + 2% BHA GLOW",
-        price:"499",
-        price1:499,
-        newarrival:1,
-      },
-      {
-        images:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_2_360x.jpg?v=1644862670",
-        title:"ROSHIP GLOW ELIXIR FACE OIL",
-        price:"499",
-        price1:499,
-        newarrival:1,
-      },
-      {
-        images:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-4_1_10b465b9-d11f-4394-9ddd-2eef7ae4037d_360x.jpg?v=1655310309",
-        title:"DAMASK ROSE RESUFACING MASK",
-        price:" 499",
-        price1:499,
-        newarrival:1,
-      },
-      {
-        images:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Artboard1-5_1_4494a133-19ca-46ad-9ec2-19a60ad70e48_360x.jpg?v=1655310163",
-        title:"CICA CALMING RAPID MASK",
-        price:"499",
-        price1:499,
-        newarrival:1,
-      },
-      {
-        images:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/alpha_d391f76e-ef30-427f-8657-3cfe4c8d84eb_360x.jpg?v=1656934978",
-       title:"ALHA ARBUTIN + AZELAIC SERUM",
-        price:"499",
-        price1:499,
-        newarrival:1,
-      },
-      {
-        images:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_1_360x.jpg?v=1644916657",
-         title:"AVOCADO + SUPERFOODS OIL",
+        image:"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1_1_360x.jpg?v=1644916657",
+         name:"AVOCADO + SUPERFOODS OIL",
         price:" 499",
         price1:499,
         newarrival:1,
@@ -113,13 +118,13 @@
     
     let div = document.createElement("div");
     let img = document.createElement("img");
-    img.src=el.images;
+    img.src=el.image;
     img.onclick=()=>{
       localStorage.setItem("product",JSON.stringify(el));
       window.location="product.html"
     }
     let title = document.createElement("h3");
-    title.innerText=el.title;
+    title.innerText=el.name;
     let price = document.createElement("p");
     price.innerText="₹"+" "+el.price;
     let btn = document.createElement("button");
@@ -177,9 +182,10 @@ let filter = document.getElementById("filter");
   })
 
 
-let cart = JSON.parse(localStorage.getItem("cart"))||[]
+let cart = JSON.parse(localStorage.getItem("products"))||[]
 let addTocart=(data)=>{
   console.log(cart)
+  alert("Product Added")
   cart.push(data);
-  localStorage.setItem("cart",JSON.stringify(cart))
+  localStorage.setItem("products",JSON.stringify(cart))
 }
