@@ -24,11 +24,11 @@ let navbar=()=>{
      </div>
      <div id="tpart">
          <img class="trackingIcon" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Group_346.svg?v=1655211633" style="    margin: 10px 5px;" alt="">
-       <a href="#" class="cartbtn">
+       <a href="addToCart.html" class="cartbtn">
          <img class="cartIcon" onclick="openNav()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIq4p9AB9tQu9d0zKl1UMhuWZbv7Q1wZxBfA&usqp=CAU" alt="" style="    width: 33px;
          margin-bottom: 13px;">
        </a>
-       <a href="" id="loginbtn">
+       <a href="login.html" id="loginbtn">
          <img id="loginIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE7pFKhkdDUw2y5itWf4EJZAZPMaWzO3Owpw&usqp=CAU" style="    margin: 0px 5px;     padding: 3px;" alt="login">
        </a>
      </div>
@@ -40,13 +40,13 @@ let navbar=()=>{
      <div class="sidebar">
         <ul>
          <li>
-             <a href="">WHAT'S NEW</a>
+             <a href="newarrival.html">WHAT'S NEW</a>
          </li>
          <li>
-             <a href="">BEST SELLERS</a>
+             <a href="bestseller.html">BEST SELLERS</a>
          </li>
          <li>
-             <a href="">499 STORE</a>
+             <a href="499pro.html">499 STORE</a>
          </li>
          <li class="in">
              <a href="" class="in-btn">SHOP BY INGREDIENTS</a><p onclick="first()" id="first">+</p>
@@ -139,7 +139,7 @@ let navbar=()=>{
              <a href="">HAIR CARE</a>
          </li>
          <li>
-             <a href="">BODY CARE</a>
+             <a href="bodycare.html">BODY CARE</a>
          </li>
          <li>
              <a href="">IKWI NUTRITION</a>
