@@ -77,7 +77,20 @@ function loadmenu(){
     }
     else{
         x.style.display="block"
-        y.src="https://www.kindpng.com/picc/m/134-1342936_x-mark-clip-art-black-x-clipart-hd.png"
-
+        y.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbKAZ-B055VeHlpPaWIDB4xwRICm3GdbXvLw&usqp=CAU"
+       
     }
 }
+let text = document.getElementById('text');
+let texts = ['SERUMS & MASKS AT FLAT 499','5 BESTSELLERS FREE ON ORDERS 1099+',"UPTO 20% OFF SITEWIDE",'3% OFF ON PREPAID ORDERS+ 10% CASHBACK'];
+let i=0;
+setInterval(function(){
+    let random = Math.floor(Math.random() * 4);
+    text.innerText = texts[i];
+    i++;
+    if(i==4){
+        i=0;
+    }
+    
+
+},10000)
