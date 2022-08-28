@@ -177,7 +177,7 @@ let navbar=()=>{
              </ul>
          </li>
          <li>
-             <a href="">LOG IN</a>
+             <a href="login.html">LOG IN</a>
          </li>
         </ul>
      </div>
