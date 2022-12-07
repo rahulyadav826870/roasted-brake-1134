@@ -41,15 +41,15 @@ Cloned a very well known Dot&Key.com website for purchasing skin related product
 ![Screenshot (92)](https://user-images.githubusercontent.com/103634544/206204140-32899130-70c6-461b-a5b7-d7b4d96d7ce1.png)
 
 ## Team Member
-- Kiran Kumar Sahoo
-- Aman Sharma
-- Abhishek Karsh
-- Sachin Choudhary
-- Rahul Yadav
+-  Rahul Yadav
+-  Karri Nagadurgaamrutha
+-  Gaurav Sudhanshu
+-  Adarsh Jondhale
+-  Saikat Patra
 
 ## To Clone this Project
 
-https://github.com/kieransahoo/hot-wood-7345.git
+https://github.com/rahulyadav826870/roasted-brake-1134
 
 
 
