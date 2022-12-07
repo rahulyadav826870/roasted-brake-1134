@@ -40,5 +40,16 @@ Cloned a very well known Dot&Key.com website for purchasing skin related product
 ### Payment :
 ![Screenshot (92)](https://user-images.githubusercontent.com/103634544/206204140-32899130-70c6-461b-a5b7-d7b4d96d7ce1.png)
 
+## Team Member
+- Kiran Kumar Sahoo
+- Aman Sharma
+- Abhishek Karsh
+- Sachin Choudhary
+- Rahul Yadav
+
+## To Clone this Project
+
+https://github.com/kieransahoo/hot-wood-7345.git
+
 
 
